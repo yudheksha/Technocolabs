@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="col-md-3">
+        <h3 class="text-center headings">Used Car Price Prediction</h3>
+    </div>
+    <div class="col-md-9">
+        <img src="{{url_for('static', filename='images/OIP.jpg')}}" alt="" class="log-img">
+    </div>
+</div>
+<br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8 borders">
+            <form action="{{url_for('input')}}" method="POST">
+            <label for="" class="lbl">Model :</label>
+            <input type="text" name="Model" class="inp-tf">
+            <label for="" class="lbl">Make :</label>
+            <input type="text" name="Make"class="inp-tf">
+            <label for="" class="lbl">City :</label>
+            <input type="text" name="City" class="inp-tf">
+            <label for="" class="lbl">Mileage :</label>
+            <input type="text" name="Mileage"class="inp-tf">
+            <br><br>
+            <div class="text-center">
+                <label for="" class="" style="width:30% ;" >Price for the car is :</label>
+                {{price | safe}}
+            </div>
+            <br><br>
+            <div class="text-center">
+            <input type="submit" value="Submit" class="sb-btn">
+        </div>
+    </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
