@@ -1,0 +1,28 @@
+.header{
+    background-color: black;
+    height:75px;
+}
+.headings{
+    color: white;
+}
+.log-img{
+    float: right;
+    width: 7%;
+    margin-top: 4px;
+}
+
+.borders{
+    border: 1px solid black;
+}
+.lbl{
+    width: 10%;
+    
+}
+.inp-tf{
+    width: 38%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sb-btn{
+    margin-bottom: 10px;
+}
